@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="drop" class="dropdown">
+        <ul class="icons showLeft">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+       <select class="select hidden">
+        <option>Edit Shortcut </option>
+        <option value="">Remove</option>
+       </select>
+    </div>
+    <div class="short-cut">
+        <div class="btn-div">
+            <input type="button" id="btn" value="+">
+        </div>
+        <h5>Add Shortcut</h5>
+    </div>
+    <div class="outer-div">
+        <div class="hidden" id="input-div">
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="input-name" placeholder="Shortcut name" value=""><br>
+            <label for="url">URL:</label>
+            <input type="text" id="url" name="url" pattern="https?://.+"><br>
+            <button id="cancel">Cancel</button>
+            <button id="done">Done</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
